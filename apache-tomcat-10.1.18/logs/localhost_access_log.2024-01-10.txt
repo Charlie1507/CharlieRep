@@ -1,0 +1,6 @@
+127.0.0.1 - admin [10/Jan/2024:13:23:07 -0600] "PUT /manager/text/deploy?path=%2FGen1-Rutas&update=true HTTP/1.1" 200 81
+127.0.0.1 - admin [10/Jan/2024:13:25:36 -0600] "PUT /manager/text/deploy?path=%2FGen1-Rutas&update=true HTTP/1.1" 200 81
+0:0:0:0:0:0:0:1 - - [10/Jan/2024:13:30:15 -0600] "GET /Gen1-Rutas HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [10/Jan/2024:13:30:15 -0600] "GET /Gen1-Rutas/ HTTP/1.1" 404 703
+0:0:0:0:0:0:0:1 - - [10/Jan/2024:13:30:15 -0600] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [10/Jan/2024:13:31:00 -0600] "GET /Gen1-Rutas/choferes/listar HTTP/1.1" 200 67

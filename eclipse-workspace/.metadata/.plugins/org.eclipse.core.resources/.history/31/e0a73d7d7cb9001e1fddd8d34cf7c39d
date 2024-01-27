@@ -1,0 +1,23 @@
+package com.silva.app.p4cams.models;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
+import jakarta.persistence.Table;
+
+@Table(name = "p4_Usuarios")
+@Entity
+public class Usuario 
+{
+	@Column(name = "id")
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "US_SEQ1")
+	@SequenceGenerator(sequenceName = "usuario_seq1", allocationSize = 1, name = "US_SEQ1")
+	private Long id;
+	
+	@Column(name = "nombre")
+	private String nombre;
+}

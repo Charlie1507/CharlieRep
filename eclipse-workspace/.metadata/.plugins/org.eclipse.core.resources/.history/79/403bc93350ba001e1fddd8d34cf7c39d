@@ -1,0 +1,15 @@
+package com.silva.app.p4cams.dtos;
+
+import java.util.Date;
+
+import com.silva.app.p4cams.enums.CategoriasGastos;
+
+public class GastoListDTO 
+{
+	private Long id;
+	private String descripcion;
+	private Float monto;
+	private Date fecha;
+	private CategoriasGastos cGastos;
+
+}

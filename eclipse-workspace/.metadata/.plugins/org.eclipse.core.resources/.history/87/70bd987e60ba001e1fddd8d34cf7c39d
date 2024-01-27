@@ -1,0 +1,35 @@
+package com.silva.app.p4cams.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.silva.app.p4cams.models.Reserva;
+
+public class ReservasService implements IService<Reserva, Reserva>
+{
+
+	@Override
+	public List<Reserva> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<Reserva> getById(Long id) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
+	}
+
+	@Override
+	public void guardar(Reserva t) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminar(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

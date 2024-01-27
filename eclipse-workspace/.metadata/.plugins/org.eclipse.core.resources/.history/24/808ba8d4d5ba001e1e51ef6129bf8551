@@ -1,0 +1,19 @@
+package com.silva.app.jpa.dtos;
+
+import java.util.Date;
+import java.util.List;
+
+import com.silva.app.jpa.models.Cliente;
+
+public class VentaCListDTO 
+{
+	private Long id;
+	private Date fecha;
+	private Float subtotal;
+	private Float descuento;
+	private Float total;
+	private String formaPago;
+	
+	
+
+}

@@ -1,0 +1,5 @@
+package com.silva.app.p4cams.dtos;
+
+public class ViajeListDTO {
+
+}

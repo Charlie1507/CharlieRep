@@ -1,0 +1,52 @@
+package com.silva.app.jpa.services;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.silva.app.jpa.dao.IVentasDao;
+import com.silva.app.jpa.dtos.VentaDTO;
+import com.silva.app.jpa.models.Venta;
+
+@Service
+public class VentasService implements IService<Venta, VentaDTO>
+{
+	@Autowired
+	private IVentasDao ventasDao;
+
+	@Override
+	public List<Venta> listar() 
+	{
+		List<Venta> ventas = new ArrayList<>();
+		ventas = (List<Venta>) ventasDao.findAll();
+		return ventas;
+	}
+
+	@Override
+	public Optional<Venta> getById(Long id) 
+	{
+		// TODO Auto-generated method stub
+		Optional<Venta> ventas = ventasDao.findById(id);
+		return ventas;
+	}
+
+	@Override
+	public void guardar(VentaDTO t) 
+	{
+		// TODO Auto-generated method stub
+		this.ventasDao.save(t);
+		
+	}
+
+	@Override
+	public void eliminar(Long id) 
+	{
+		// TODO Auto-generated method stub
+		this.ventasDao.deleteById(id);
+		
+	}
+
+}

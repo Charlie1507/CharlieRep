@@ -1,0 +1,48 @@
+package com.silva.app.jpa.services;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.silva.app.jpa.dao.IDetallesVentas;
+import com.silva.app.jpa.models.DetalleVenta;
+
+@Service
+public class DetallesVentasService implements IService<DetalleVenta>
+{
+	private IDetallesVentas detallesVentasDao;
+	
+	@Override
+	public List<DetalleVenta> listar() 
+	{
+		List<DetalleVenta> detalles = new ArrayList<>();
+		detalles = (List<DetalleVenta>) detallesVentasDao.findAll();
+		return detalles;
+	}
+
+	@Override
+	public Optional<DetalleVenta> getById(Long id) 
+	{
+		Optional<DetalleVenta> detalle = detallesVentasDao.findById(id);
+		return detalle;
+	}
+
+	@Override
+	public void guardar(DetalleVenta t) 
+	{
+		// TODO Auto-generated method stub
+				this.detallesVentasDao.save(t);
+		
+	}
+
+	@Override
+	public void eliminar(Long id) 
+	{
+		// TODO Auto-generated method stub
+				this.detallesVentasDao.deleteById(id);
+		
+	}
+
+}

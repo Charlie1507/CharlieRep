@@ -1,0 +1,7 @@
+package com.silva.app.jpa.dtos;
+
+public class UsuarioListDTO 
+{
+	
+
+}
