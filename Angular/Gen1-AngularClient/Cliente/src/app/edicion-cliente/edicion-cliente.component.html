@@ -1,0 +1,29 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2>Edicion Cliente</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group"><label for="">Nombre</label><input type="text"  class="form-control" #nombre [value]="cliente.nombre"></div>
+
+            <div class="form-group"><label for="">Apellido Paterno</label><input type="text"  class="form-control" #apPaterno [value]="cliente.apPaterno"></div>
+            
+            <div class="form-group"><label for="">Apellido Materno</label><input type="text"  class="form-control" #apMaterno [value]="cliente.apMaterno"></div>
+            
+            <div class="form-group"><label for="">Telefono</label><input type="text"  class="form-control" #telefono [value]="cliente.telefono"></div>
+            
+            <div class="form-group"><label for="">Correo</label><input type="text"  class="form-control" #correo [value]="cliente.correo"></div>
+            
+            <div class="form-group"><label for="">Numero de Afiliado</label><input type="text"  class="form-control"#numAfiliado [value]="cliente.numAfiliado"></div>
+            
+            <div class="form-group" style="align-items: center;">
+                <br>
+                <button class="btn btn-success" (click)="actualizarCliente()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
